@@ -33,6 +33,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+
+    var names=['Ram','Raju','Arjun'];
     return Scaffold(
       appBar: AppBar(
 
@@ -47,10 +49,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
 
-
       //This code is for center container.....
 
       /*Center(
+
         child: Container(
           width: 200,
           height: 100,
@@ -151,7 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
       //This is scroll view Widgets........
 
 
-      Padding(
+     /* Padding(
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
           child: Column(
@@ -244,7 +246,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
-      )
+      )*/
 
 
       //This is ListView Widget........
@@ -282,7 +284,14 @@ class _MyHomePageState extends State<MyHomePage> {
       // This is ListView.Builder class..........
       
 
+    ListView.builder(itemBuilder: (context, index) {
 
+
+      return Text(names[index],style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500));
+    },
+
+    itemCount: names.length,
+    )
 
 
 
