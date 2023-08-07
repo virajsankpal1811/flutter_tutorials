@@ -183,9 +183,7 @@ class _MyHomePageState extends State<MyHomePage> {
   String password = "";
 
   void _submit() {
-    // you can write your
-    // own code according to
-    // whatever you want to submit;
+
   }
 
   @override
