@@ -303,6 +303,7 @@ class SwitchClass extends State {
       print('Switch Button is OFF');
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -321,4 +322,4 @@ class SwitchClass extends State {
           Text('$textValue', style: TextStyle(fontSize: 20),)
         ]);
   }
-}  
+}

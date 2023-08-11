@@ -5,7 +5,8 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-/*import 'package:flutter/material.dart';
+/*
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:flutter_3/main.dart';
@@ -31,6 +32,7 @@ void main() {
 
 
  */
+//Switch in Flutter
 
 import 'package:flutter/material.dart';
 
@@ -81,14 +83,12 @@ class MyButton extends StatelessWidget {
         SnackBar(content: Text(" You just Tapped on the Button"));
 
         // ignore: deprecated_member_use
-        Scaffold.of(context).showSnackBar(snackBar);
       },
       // The tap button
       child: Container(
         padding: const EdgeInsets.all(12.0),
         decoration: BoxDecoration(
           // ignore: deprecated_member_use
-          color: Theme.of(context).buttonColor,
           borderRadius: BorderRadius.circular(8.0),
         ),
         child: const Text('Tap Button'),
